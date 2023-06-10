@@ -1,0 +1,633 @@
+@import url("global.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+} 
+
+nav #logo {
+  font-family: AlegreyaSansSC-Bold;
+  font-size: 6vw;
+  color: var(--gray);
+}
+
+nav .right img {
+  width: 10vw;
+  animation: pulse 0.3s linear infinite;
+}
+
+/* Navigation Bar */
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .promotion-card {
+  width: 90%;
+  display: flex;
+}
+
+main .promotion-card .left {
+  padding: 25px 0 25px 0;
+  background-color: var(--light-orange);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .promotion-card .right {
+  padding: 25px 0 25px 0;
+  background-color: var(--tiffany);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .promotion-card .left .logo, main .promotion-card .right .logo {
+  width: 30vw;
+}
+
+main .promotion-card .left .image, main .promotion-card .right .image{
+  width: 27vw;
+}
+
+.button {
+  text-decoration: none;
+  background-color: var(--dark-purple);
+  color: var(--light-gray);
+  padding: 10px 20px 15px 20px;
+  border-radius: 5px;
+  margin-top: 25px;
+  font-size: 1.5vw;
+  font-family: 'roboto', sans-serif;
+  font-weight: bold;
+  transition: all 0.1s linear;
+}
+
+.button:hover {
+  background-color: #585454;
+  color: white;
+}
+
+main .available-platforms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  width: 80%;
+}
+
+main .available-platforms p:first-child {
+  font-family: AlegreyaSansSC-Medium;
+  font-weight: bold;
+  font-size: 1.5vw;
+  margin-bottom: 25px;
+}
+
+main .available-platforms .platform-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+main .available-platforms .platform-container img {
+  height: 2rem;
+  margin: 12px;
+}
+
+main .dlc-video {
+  background-color: var(--tiffany);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 60px 0;
+}
+
+main .dlc-video iframe {
+  width: calc(85vw - 4px);
+  height: calc(48vw - 4px);
+}
+
+main .delicious-last-course {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+main .delicious-last-course img {
+  width: 60%;
+  margin-right: 50px;
+}
+
+main .delicious-last-course .dlc-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+}
+
+main .delicious-last-course .dlc-text p:first-child,
+main .delicious-last-course .dlc-text p:nth-child(2) {
+  font-family: AlegreyaSansSC-Black;
+  font-size: 3.5rem;
+  color: var(--gray);
+}
+
+main .delicious-last-course .dlc-text p:nth-child(3),
+main .delicious-last-course .dlc-text p:nth-child(4) {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  color: var(--gray);
+}
+
+main .delicious-last-course .dlc-text p:nth-child(3) a {
+  color: var(--gray);
+}
+
+main .delicious-last-course .dlc-text .button-container {
+  display: flex;
+  align-items: center;
+}
+
+main .delicious-last-course .dlc-text .button-container img {
+  min-width: 5vw;
+  max-width: 7vw;
+}
+
+main .delicious-last-course .dlc-text .button-container .button {
+  font-family: AlegreyaSansSC-Black;
+  padding: 20px 25px;
+}
+
+@media(max-width: 1000px) {
+  
+  main .delicious-last-course {
+    flex-direction: column;
+  }
+
+  main .delicious-last-course img {
+    width: 90%;
+    margin: 0;
+  }
+
+  main .delicious-last-course .dlc-text {
+    width: 100%;
+  }
+
+  main .delicious-last-course .dlc-text p:first-child,
+  main .delicious-last-course .dlc-text p:nth-child(2),
+  main .delicious-last-course .dlc-text p:nth-child(3),
+  main .delicious-last-course .dlc-text p:nth-child(4),
+  main .delicious-last-course .dlc-text .button-container {
+    align-self: center;
+    text-align: center;
+  }
+
+}
+
+main .magical-wondergame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  padding: 50px 0;
+}
+
+main .magical-wondergame .content-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 90%;
+}
+
+main .magical-wondergame .title {
+  font-family: 'roboto', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--dark-purple);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+main .magical-wondergame .content-container iframe {
+  width: 46.5vw;
+  height: 55vh;
+}
+
+main .magical-wondergame .content-container .paragraph-container {
+  width: 45%;
+  font-family: 'roboto', sans-serif;
+  font-size: 1.25rem;
+  color: var(--dark-purple);
+  margin-bottom: 50px;
+}
+
+@media(max-width: 1000px) {
+
+  main .magical-wondergame .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .magical-wondergame .title {
+    font-size: 5vw;
+  }
+
+  main .magical-wondergame .content-container iframe {
+    width: calc(90vw - 4px);
+    height: calc(80vh - 4px);
+    margin-bottom: 25px;
+  }
+
+  main .magical-wondergame .content-container .paragraph-container {
+    width: 100%;
+    align-self: flex-start;
+  }
+
+}
+
+main .awards {
+  background-color: var(--yellow);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .awards div {
+  padding: 30px 0;
+}
+
+main .awards .awards-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .awards .line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  margin: 0 50px;
+  background-color: var(--gray);
+  opacity: 10%;
+}
+
+main .awards .awards-title img {
+  width: 175px;
+}
+
+main .awards .annie-awards {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+main .awards .annie-awards p {
+  width: 200px;
+  font-family: 'roboto', sans-serif;
+}
+
+main .awards .annie-awards img {
+  width: 150px;
+  margin: 0 50px;
+}
+
+main .awards .annie-awards p:nth-child(1) {
+  text-align: right;
+}
+
+main .awards .annie-awards p:nth-child(3) {
+  text-align: left;
+}
+
+main .awards .separator {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .awards .the-game-awards-and-bafta-winner-games {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'roboto', sans-serif;
+  height: 100%;
+}
+
+main .awards .the-game-awards-and-bafta-winner-games .left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+main .awards .the-game-awards-and-bafta-winner-games .left img {
+  height: 100px;
+  margin: 0 25px;
+}
+
+main .awards .the-game-awards-and-bafta-winner-games .left p {
+  text-align: right;
+}
+
+main .awards .the-game-awards-and-bafta-winner-games .middle {
+  height: 100%;
+}
+
+main .awards .the-game-awards-and-bafta-winner-games .middle .vertical-line {
+  display: block;
+  height: 250px;
+  width: 2px;
+  margin: 0 50px;
+  background-color: var(--gray);
+  opacity: 10%;
+}
+
+main .awards .the-game-awards-and-bafta-winner-games .right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+}
+
+main .awards .the-game-awards-and-bafta-winner-games .right img {
+  height: 112px;
+  margin: 0 25px;
+}
+
+main .dice-annual-awards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  width: 70%;
+  font-family: 'roboto', sans-serif;
+}
+
+main .dice-annual-awards img {
+  width: 250px;
+}
+
+main .dice-annual-awards p {
+  width: 150px;
+}
+
+main .awards .game-developers-choice-awards-and-sxsw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'roboto', sans-serif;
+  height: 100%;
+}
+
+main .awards .game-developers-choice-awards-and-sxsw .left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+main .awards .game-developers-choice-awards-and-sxsw .left img {
+  height: 150px;
+  margin: 0 25px;
+}
+
+main .awards .game-developers-choice-awards-and-sxsw .left p {
+  text-align: right;
+}
+
+main .awards .game-developers-choice-awards-and-sxsw .middle {
+  height: 100%;
+}
+
+main .awards .game-developers-choice-awards-and-sxsw .middle .vertical-line {
+  display: block;
+  height: 250px;
+  width: 2px;
+  margin: 0 50px;
+  background-color: var(--gray);
+  opacity: 10%;
+}
+
+main .awards .game-developers-choice-awards-and-sxsw .right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+}
+
+main .awards .game-developers-choice-awards-and-sxsw .right img {
+  height: 140px;
+  margin: 0 25px;
+}
+
+main .awards .steam-and-webby {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'roboto', sans-serif;
+  height: 100%;
+}
+
+main .awards .steam-and-webby .left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+main .awards .steam-and-webby .left img {
+  height: 150px;
+  margin: 0 25px;
+}
+
+main .awards .steam-and-webby .left p {
+  text-align: right;
+}
+
+main .awards .steam-and-webby .middle {
+  height: 100%;
+}
+
+main .awards .steam-and-webby .middle .vertical-line {
+  display: block;
+  height: 250px;
+  width: 2px;
+  margin: 0 50px;
+  background-color: var(--gray);
+  opacity: 10%;
+}
+
+main .awards .steam-and-webby .right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+}
+
+main .awards .steam-and-webby .right img {
+  height: 140px;
+  margin: 0 25px;
+}
+
+main .awards .steam-and-webby .right .container {
+  display: flex;
+  flex-direction: column;
+}
+
+main .awards .the-game-awards-and-bafta-winner-games .hide,
+main .awards .game-developers-choice-awards-and-sxsw .hide,
+main .awards .steam-and-webby .hide {
+  display: none;
+} 
+
+@media (max-width: 1000px) {
+
+  main .awards .annie-awards {
+    flex-direction: column;
+  }
+
+  main .awards .annie-awards p {
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  main .awards .annie-awards p:nth-child(1),
+  main .awards .annie-awards p:nth-child(3) {
+    text-align: center;
+  }
+
+  main .awards .the-game-awards-and-bafta-winner-games,
+  main .awards .game-developers-choice-awards-and-sxsw,
+  main .awards .steam-and-webby {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .awards .the-game-awards-and-bafta-winner-games .left,
+  main .awards .the-game-awards-and-bafta-winner-games .right,
+  main .awards .game-developers-choice-awards-and-sxsw .left,
+  main .awards .game-developers-choice-awards-and-sxsw .right,
+  main .awards .steam-and-webby .left,
+  main .awards .steam-and-webby .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .awards .the-game-awards-and-bafta-winner-games .middle .vertical-line,
+  main .awards .game-developers-choice-awards-and-sxsw .middle .vertical-line,
+  main .awards .steam-and-webby .middle .vertical-line {
+    display: none;
+  }
+
+  main .awards .the-game-awards-and-bafta-winner-games .hide,
+  main .awards .game-developers-choice-awards-and-sxsw .hide,
+  main .awards .steam-and-webby .hide {
+    display: flex;
+    width: 100%;
+  } 
+
+  main .dice-annual-awards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main .dice-annual-awards p {
+    margin: 50px 0;
+    text-align: center;
+  }
+
+}
+
+main .cuphead-sheet-music {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0;
+  background-color: var(--light-blue);
+  width: 100%;
+}
+
+main .cuphead-sheet-music p:first-child {
+  font-family: AlegreyaSansSC-Black;
+  font-size: 3vw;
+}
+
+main .cuphead-sheet-music p:nth-child(2) {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2vw;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
+main .cuphead-sheet-music img {
+  width: 60vw;
+}
+
+main .cuphead-sheet-music a {
+  font-family: AlegreyaSansSC-Black;
+  font-size: 2.75vw;
+  text-decoration: none;
+  color: var(--dark-purple);
+}
+
+main .cuphead-sheet-music a:hover {
+  color: var(--red);
+}
+
+main .company-logos {
+  width: 100%;
+  padding: 90px 0 70px 0;
+  background-color: var(--super-light-gray);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main .company-logos img {
+  width: 90vw;
+}
+
+/* Main */
+
+/* Footer */
+
+footer p {
+  padding: 30px 50px 50px 75px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 1vw;
+}
+
+/* Footer */

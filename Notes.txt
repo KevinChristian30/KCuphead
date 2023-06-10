@@ -1,0 +1,4 @@
+- Animation Bug while transitioning from ducking to duckidle where the ducking animation is skipped straight to duckidle.
+- Animation Bug while transitioning from duckidle to idle where there is a  moment where we render an idle sprite at a very low Y.
+- Jumping state is not finished and has't been used.
+- Force bug while jumping

@@ -1,0 +1,46 @@
+:root{
+  --super-light-gray: #f5f5f5;
+  --light-gray: #e0dfd5;
+  --gray: #302c2c;
+  --light-orange: #ffcc14;
+  --light-blue: #b0dce4;
+  --tiffany: #a8e4c4;
+  --yellow: #ffcc14;
+  --red: #fa0909;
+  --dark-purple: #3c3454;
+}
+
+@keyframes pulse {
+  0% {
+   transform: scale(1, 1);
+  }
+
+  50% {
+   transform: scale(1.1, 1.1);
+  }
+
+  100% {
+  transform: scale(1, 1);
+  }
+
+}
+
+@font-face {
+  font-family: AlegreyaSansSC-Light;
+  src: url("../assets/ui/fonts/AlegreyaSansSC-Light.ttf");
+}
+
+@font-face {
+  font-family: AlegreyaSansSC-Medium;
+  src: url("../assets/ui/fonts/AlegreyaSansSC-Medium.ttf");
+}
+
+@font-face {
+  font-family: AlegreyaSansSC-Bold;
+  src: url("../assets/ui/fonts/AlegreyaSansSC-Bold.ttf");
+}
+
+@font-face {
+  font-family: AlegreyaSansSC-Black;
+  src: url("../assets/ui/fonts/AlegreyaSansSC-Black.ttf");
+}
