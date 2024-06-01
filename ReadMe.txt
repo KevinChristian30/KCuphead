@@ -4,7 +4,7 @@
 ## Installing / Getting started
 
 ```shell
-git clone https://github.com/KevinChristian30/KCuphead
+git clone https://github.com/KevinChristian30/kcuphead
 ```
 
 The command above will fetch the repository.
